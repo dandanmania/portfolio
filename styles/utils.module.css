@@ -1,3 +1,11 @@
+.headingTitle {
+    font-size: 6rem;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.05rem;
+    margin: 1rem 0;
+}
+
 .heading2x1 {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -49,4 +57,9 @@
 
 .lightText {
     color: #666;
+}
+
+.body {
+    background-color: rgba(29, 29, 29, 1.0);
+    padding: 6rem;
 }

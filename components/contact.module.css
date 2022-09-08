@@ -1,0 +1,74 @@
+.outer{
+    background-color: #272727;
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    position: relative;
+    width: 95vw;
+    max-width: 900px;
+    border-radius: 24px;
+}
+
+.foil{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    place-content: space-evenly;
+}
+  
+.foil:before{
+    animation: shine 5s infinite;
+    background: linear-gradient(transparent 0%,
+      rgba(255, 255, 255, 0.1) 45%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0.1) 55%,
+      transparent 100%);
+  
+    /*transition: all 2s;*/
+    content: "";
+    height: 200%;
+    left:-120%;
+    position: absolute;
+    top:-120%;
+    transform: rotate(-45deg);
+    width: 200%;
+    z-index: 10;
+}
+  
+@keyframes shine{
+    100% {top:-150%;left:-150%;}
+    80% {top:-120%;left:-120%;}
+    0%, 20%, 40% {left:100%;top:100%;}
+}
+
+.contactBg {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    margin: 10vw 5vw;
+}
+
+.contactList {
+    flex: 2 1 auto;
+    color: #DBBD5A !important;
+    font-size: larger;
+    align-self: center;
+    margin: 5vw 15vw 5vw 0;
+}
+
+.contactList > h1 {
+    font-size: larger;
+    margin-bottom: 4px;
+}
+
+.contactList > h2 {
+    font-size: large;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+}
