@@ -1,8 +1,8 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from 'next/head';
-import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css';
+import Link from "next/link";
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id);
@@ -27,12 +27,22 @@ export default function Post({ postData }) {
         <Head>
             <title>{postData.title}</title>
         </Head>
-        <article>
+        <article style={{padding: '0 3rem'}}>
             <h1 className={utilStyles.headingx1}>{postData.title}</h1>
-            <div className={utilStyles.lightText}>
-                <Date dateString={postData.date} />
-            </div>    
+            <div style={{textAlign: '-webkit-center'}}>
+            <img src={postData.image} style={{maxHeight: '30rem'}}/> 
+            </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <Link href={postData.gh}>
+                <a target="_blank" className={`${utilStyles.greenBg} ${utilStyles.whiteText} ${utilStyles.projectButton}`}>
+                    GitHub Repo
+                </a>
+            </Link>
+            <Link href={postData.link}>
+                <a target="_blank" className={`${utilStyles.greenBg} ${utilStyles.whiteText} ${utilStyles.projectButton}`} style={{ marginLeft: '10px'}}>
+                    Live Site
+                </a>
+            </Link>
         </article>
     </Layout>
     );
