@@ -24,7 +24,7 @@ export default function Home({ allPostsData }) {
       <div className={`${utilStyles.headingMd} ${utilStyles.body} ${utilStyles.imageContainer}`}>
         <Image
           priority
-          src="/../public/images/DK_logo_proto2.png"
+          src="/DK_logo_proto2.png"
           height={890/2}
           width={786/2}
           alt="Logo"
@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
         </div>
         <Image 
           priority
-          src="/../public/images/daniel_photo.jpg"
+          src="/daniel_photo.jpg"
           width={500}
           height={500}
         />

@@ -12,7 +12,7 @@ export default function Contact() {
                 <div className={cardStyles.contactBg}>
                   <Image 
                     priority
-                    src="/../public/images/DK_logo_proto2_butgold.png"
+                    src="/DK_logo_proto2_butgold.png"
                     height={890/4}
                     width={786/4}
                   />
