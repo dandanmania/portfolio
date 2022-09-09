@@ -1,0 +1,7 @@
+.footer {
+    display: block;
+    text-align: center;
+    background-color: rgba(225,225,225,0.5);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
