@@ -1,13 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Navbar from './navbar';
 import Footer from './footer';
 
 const name = 'Dan';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Daniel Kim';
 
 export default function Layout({ children, home }) {
     return (
@@ -29,10 +27,10 @@ export default function Layout({ children, home }) {
             </Head>
             <Navbar />
             <div className={styles.body}>
-            <main className="">{children}</main>
+            <main>{children}</main>
             </div>
             {!home && (
-                <div className={styles.backToHome}>
+                <div className={styles.backToHome} style={{margin: '3rem'}}>
                     <Link href="/">
                         <a>← Back to home</a>
                     </Link>
