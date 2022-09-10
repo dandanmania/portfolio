@@ -5,6 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Contact from '../components/contact';
+import StarRatings from 'react-star-ratings';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -34,7 +35,8 @@ export default function Home({ allPostsData }) {
         <div className={utilStyles.paddingR50}>
           <h1 className={utilStyles.h1}>Hello I'm Daniel Kim and I'm an aspiring web developer!</h1>
           <p className={utilStyles.p}>
-            My name is Daniel Kim. I graduated with a degree in Human Biology, but found out the field was not for me. At the moment, I am pursuing web development to hopefully enter a bright new career.
+            My name is Daniel Kim. I graduated University of California San Diego with a degree in Human Biology, but found out the field was not for me. At the moment, I am pursuing web development to hopefully enter a bright new career.
+            My hobbies include playing video games and watching anime.
           </p>
         </div>
         <Image 
@@ -48,30 +50,90 @@ export default function Home({ allPostsData }) {
         <h2 className={`${utilStyles.headingTitle} ${utilStyles.toolsTitle}`}>Tools</h2>
         <div className={utilStyles.toolsImagesDivOne}>
           <div className={utilStyles.toolsImagesDivTwo}>
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-                className={utilStyles.toolsImages}
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-                className={utilStyles.toolsImages}
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                className={utilStyles.toolsImages}
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-                className={utilStyles.toolsImages}
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
-                className={utilStyles.toolsImages}
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
-                className={utilStyles.toolsImages}
-              />
+              <div className={utilStyles.toolsImagesDivThree}>
+                <img
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
+                  className={utilStyles.toolsImages}
+                />
+                <div className={utilStyles.stars}>
+                  <StarRatings 
+                    rating={4.0}
+                    starDimension="15px"
+                    starSpacing="5px"
+                    starRatedColor="#292929"
+                  />
+                </div>
+              </div>
+              <div className={utilStyles.toolsImagesDivThree}>
+                <img
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
+                  className={utilStyles.toolsImages}
+                />
+                <div className={utilStyles.stars}>
+                  <StarRatings 
+                      rating={4.0}
+                      starDimension="15px"
+                      starSpacing="5px"
+                      starRatedColor="#292929"
+                    />
+                </div>
+              </div>
+              <div className={utilStyles.toolsImagesDivThree}>
+                <img
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                  className={utilStyles.toolsImages}
+                />
+                <div className={utilStyles.stars}>
+                  <StarRatings 
+                    rating={3.5}
+                    starDimension="15px"
+                    starSpacing="5px"
+                    starRatedColor="#292929"
+                  />
+                </div>
+              </div>
+              <div className={utilStyles.toolsImagesDivThree}>
+                <img
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+                  className={utilStyles.toolsImages}
+                />
+                <div className={utilStyles.stars}>
+                  <StarRatings 
+                    rating={3.5}
+                    starDimension="15px"
+                    starSpacing="5px"
+                    starRatedColor="#292929"
+                  />
+                </div>
+              </div>
+              <div className={utilStyles.toolsImagesDivThree}>
+                <img
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                  className={utilStyles.toolsImages}
+                />
+                <div className={utilStyles.stars}>
+                  <StarRatings 
+                    rating={2.4}
+                    starDimension="15px"
+                    starSpacing="5px"
+                    starRatedColor="#292929"
+                  />
+                </div>
+              </div>
+              <div className={utilStyles.toolsImagesDivThree}>
+                <img
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
+                  className={utilStyles.toolsImages}
+                />
+                <div className={utilStyles.stars}>
+                  <StarRatings 
+                    rating={2.2}
+                    starDimension="15px"
+                    starSpacing="5px"
+                    starRatedColor="#292929"
+                  />
+                </div>
+              </div>
           </div>
         </div>
       </section>
