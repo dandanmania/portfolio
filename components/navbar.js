@@ -1,6 +1,6 @@
 import Link from "next/link";
 import userData from "../constants/data";
-import styles from "./navbar.module.css"
+import styles from "../styles/navbar.module.css"
 
 export default function Navbar() {
     return (
