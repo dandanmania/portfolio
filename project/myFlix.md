@@ -1,10 +1,10 @@
 ---
-title: 'myFlix'
-index: 3
-direction: 'flex-start'
+title: 'Movie App - React'
+index: 2
+direction: 'flex-end'
 image: '/myFlix-sample.png'
-shift: '0 -20rem'
-techs: 'React, React Redux, Router, Bootstrap'
+shift: '0 -30rem'
+techs: 'React, React Redux, Router, Bootstrap, Express, MongoDB'
 gh: 'https://github.com/dandanmania/myFlix-client'
 link: 'https://dandan-myflix.netlify.app/'
 ---

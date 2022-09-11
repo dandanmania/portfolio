@@ -1,11 +1,11 @@
 ---
-title: 'myFlix - Angular'
+title: 'Movie App - Angular'
 index: 5
 direction: 'flex-start'
 image: '/myFlixAngularSample.png'
-techs: 'Angular'
+techs: 'Angular, Angular Material'
 gh: 'https://github.com/dandanmania/myFlix-Angular-client'
 link: 'https://dandanmania.github.io/myFlix-Angular-client/'
 ---
 
-An app using a self-made API to display information of a handful of anime movies... except this time using Angular!
+An Angular app using a self-made API to display information of a handful of anime movies. Register and log in to access the movies and their details.

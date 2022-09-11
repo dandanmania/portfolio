@@ -38,11 +38,13 @@ export default function Post({ postData }) {
                     GitHub Repo
                 </a>
             </Link>
-            <Link href={postData.link}>
+            {postData.link ? (<Link href={postData.link}>
                 <a target="_blank" className={`${utilStyles.greenBg} ${utilStyles.whiteText} ${utilStyles.projectButton}`} style={{ marginLeft: '10px'}}>
                     Live Site
                 </a>
-            </Link>
+            </Link>) : (
+                <></>
+            )}
         </article>
     </Layout>
     );

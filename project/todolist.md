@@ -1,12 +1,12 @@
 ---
 title: 'To Do List App'
-index: 1
-direction: 'flex-start'
+index: 0
+direction: 'flex-end'
 image: '/todolist-sample.png'
-shift: '0 -35rem'
+shift: '0 -50rem'
 techs: 'HTML, jQuery'
 gh: 'https://github.com/dandanmania/to-do-list-app'
 link: 'https://dandanmania.github.io/to-do-list-app/'
 ---
 
-A to-do list app made using HTML and jQuery.
+A simple to-do list app made using HTML and jQuery.

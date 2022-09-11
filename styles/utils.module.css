@@ -126,6 +126,11 @@
     place-content: center;
 }
 
+.toolsImagesDivThree {
+    text-align: -webkit-center;
+    padding: 10px;
+}
+
 .toolsImages {
     height: 125px;
     width: 125px;
@@ -134,12 +139,22 @@
 
 .toolsImages:hover {
     transition: transform 0.2s linear;
-    transform: scale(150%);
+    transform: scale(130%);
+}
+
+.toolsImages:hover~div {
+    visibility: visible !important;
+    transition-property: visibility;
+    transition-delay: 0.2s;
+}
+
+.stars {
+    visibility: hidden;
 }
 
 .projectContainer {
     padding-bottom: 0rem;
-    height: 125rem;
+    height: 145rem;
 }
 
 .projectSection {
@@ -270,7 +285,7 @@
 
     .projectContainer {
         padding-bottom: 0rem;
-        height: 115rem;
+        height: 130rem;
     }
 
     .projectFlexDiv {
@@ -314,6 +329,10 @@
 
     .toolsImagesDivOne {
         translate: 0 -3rem;
+    }
+
+    .stars {
+        visibility: visible;
     }
 
     .contactSection {
