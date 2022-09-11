@@ -38,6 +38,19 @@ export default function Contact() {
                       </svg>
                       </a>
                     </Link>
+                    <Link href="https://medium.com/@dandanmania">
+                      <a target="_blank">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1633.77 1150.51"
+                        height="32"
+                        fill="currentColor"
+                        style={{marginLeft: '20px'}}
+                      >
+                        <g id="Layer_2" data-name="Layer 2"><g id="Symbol"><path d="M883.45,576.26c0,163.67-131.78,296.35-294.33,296.35S294.78,739.93,294.78,576.26,426.56,279.9,589.12,279.9,883.45,412.59,883.45,576.26"/><path d="M1206.34,576.26c0,154.06-65.89,279-147.17,279S912,730.32,912,576.26s65.88-279,147.16-279,147.17,124.9,147.17,279"/><path d="M1338.41,576.26c0,138-23.17,249.94-51.76,249.94s-51.75-111.91-51.75-249.94,23.17-249.94,51.75-249.94,51.76,111.9,51.76,249.94"/></g></g>
+                      </svg>
+                      </a>
+                    </Link>
                     <Link href="https://twitter.com/kimosterferson">
                       <a target="_blank">
                       <svg
