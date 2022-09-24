@@ -65,10 +65,16 @@
 .contactList > h1 {
     font-size: larger;
     margin-bottom: 4px;
+    margin-top: 6px;
 }
 
 .contactList > h2 {
     font-size: large;
     margin-top: 0.25rem;
     margin-bottom: 1.5rem;
+}
+
+.resume {
+    color: #DBBD5A !important;
+    font-size: large;
 }

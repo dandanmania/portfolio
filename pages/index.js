@@ -33,10 +33,9 @@ export default function Home({ allPostsData }) {
       </div>
       <section className={`${utilStyles.headingMd} ${utilStyles.body} ${utilStyles.introSection}`}>
         <div className={utilStyles.paddingR50}>
-          <h1 className={utilStyles.h1}>Hello I'm Daniel Kim and I'm an aspiring web developer!</h1>
+          <h1 className={utilStyles.h1}>Hello I'm Daniel Kim and I'm a web developer!</h1>
           <p className={utilStyles.p}>
-            My name is Daniel Kim. I graduated University of California San Diego with a degree in Human Biology, but found out the field was not for me. At the moment, I am pursuing web development to hopefully enter a bright new career.
-            My hobbies include playing video games and watching anime.
+          Hi, I'm Daniel. I'm a web developer and I previously studied human biology and was trained to apply emergency care for patients. I want to put my past experiences towards building a bright career that involved my interest in computers and the internet, which led me to pursue a job in tech. As a developer, I'm excited to expand my skills to bring an enriching experience to users.
           </p>
         </div>
         <Image 
