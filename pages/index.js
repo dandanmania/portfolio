@@ -28,21 +28,25 @@ export default function Home({ allPostsData }) {
           src="/DK_logo_proto2.png"
           height={890/2}
           width={786/2}
-          alt="Logo"
+          alt="Daniel's Logo"
         />
       </div>
       <section className={`${utilStyles.headingMd} ${utilStyles.body} ${utilStyles.introSection}`}>
-        <div className={utilStyles.paddingR50}>
+        <div className={utilStyles.paddingR50} style={{width: '80vw'}}>
           <h1 className={utilStyles.h1}>Hello I'm Daniel Kim and I'm a web developer!</h1>
           <p className={utilStyles.p}>
-          Hi, I'm Daniel. I'm a web developer and I previously studied human biology and was trained to apply emergency care for patients. I want to put my past experiences towards building a bright career that involved my interest in computers and the internet, which led me to pursue a job in tech. As a developer, I'm excited to expand my skills to bring an enriching experience to users.
+          Hi, I'm Daniel Kim. I'm a web developer and I previously studied human biology and was trained to apply emergency care for patients. I want to put my past experiences towards building a bright career that involved my interest in computers and the internet, which led me to pursue a job in tech. As a developer, I'm excited to expand my skills to bring an enriching experience to users.
+          </p>
+          <p className={utilStyles.p}>
+          I am currently looking for full-time work and am okay with both in-person and remote jobs.
           </p>
         </div>
         <Image 
           priority
           src="/daniel_photo.jpg"
-          width={500}
-          height={500}
+          alt="Picture of the Developer"
+          width={300}
+          height={300}
         />
       </section>
       <section className={`${utilStyles.body} ${utilStyles.toolsSection}`}>
