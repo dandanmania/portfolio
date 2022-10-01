@@ -24,7 +24,7 @@ export default function Contact() {
                     <h2>{userData.email}</h2>
                     <h1>Phone</h1>
                     <h2>{userData.phone}</h2>
-                    <Link href="/files/Kim-Daniel-Resume.pdf"><a className={cardStyles.resume} target="_blank"><h1 fill="currentColor" style={{marginBottom: 0}}>Resume</h1></a></Link>
+                    <Link href="/files/Kim.Daniel.Webdeveloper.2022.pdf"><a className={cardStyles.resume} target="_blank"><h1 fill="currentColor" style={{marginBottom: 0}}>Resume</h1></a></Link>
                     <br></br>
                     <div>
                     <Link href="https://www.linkedin.com/in/daniel-sinhoo-kim/">
