@@ -9,4 +9,4 @@ gh: 'https://github.com/dandanmania/myFlix-client'
 link: 'https://dandan-myflix.netlify.app/'
 ---
 
-An app using a self-made API to display information of a handful of anime movies. Register and log in to access the movies and their details. Uses React [Redux, Router, Bootstrap].
+An app using a self-made API using React (Redux, Router, Bootstrap) to display information of a handful of anime movies. Register and log in to access the movies and their details (i.e. director and genre). Users can add movies to their list of favorites for quick access and also manage and update their account details.

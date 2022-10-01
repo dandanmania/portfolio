@@ -9,4 +9,4 @@ gh: 'https://github.com/dandanmania/pokedex-app'
 link: 'https://dandanmania.github.io/pokedex-app/'
 ---
 
-An app that functions as a Generation 1 Pokédex using jQuery, Bootstrap and the [PokeAPI](https://pokeapi.co/). Learn more of the first 151 Pokémon!
+An app that functions as a Generation 1 Pokédex using jQuery to power the Pokédex search function, Bootstrap to create a responsive layout and the [PokeAPI](https://pokeapi.co/) to fetch the expansive information on all of the Pokémon in the Pokédex. Learn more of the first 151 Pokémon!
