@@ -39,14 +39,14 @@ export default function Home({ allPostsData }) {
           I bear a innate calm attitude and carefully approach any problem.
           I am able to work well with others and bring forth my creativity and determination to get the job done and move plans forward.
           </p>
-          <p>
+          <p className={utilStyles.p}>
           In college, I had taken a basic coding class out of curiosity and had enjoyed making simple websites.
           When I was at a crossroads, I gathered the courage to try something new and trained at CareerFoundry's Full Stack Web Development Course.
           Through trial and tribulation, my understanding of web apps and how they work and operate have evolved and will continue to do so.
           I want to put my past experiences towards building a bright career that involved my interest in computers and the internet, which led me to pursue a job in tech.
           As a developer, I'm excited to expand my skills to bring an enriching experience to users.
           </p>
-          <p>
+          <p className={utilStyles.p}>
           I am currently looking for full-time work and am okay with both in-person and remote jobs.
           </p>
         </div>
