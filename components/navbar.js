@@ -12,7 +12,7 @@ export default function Navbar() {
                     </a>
                 </Link>
                 <span style={{flex: '1 1 auto'}}></span>
-                <Link href="/files/Kim.Daniel.Webdeveloper.2022.pdf"><a target="_blank" style={{paddingBottom: '8px'}}><h3>RESUME</h3></a></Link>
+                <Link href="/files/Kim.Daniel.Webdeveloper.2023.pdf"><a target="_blank" style={{paddingBottom: '8px'}}><h3>RESUME</h3></a></Link>
                 <span className={styles.svgSplitter}></span>
                 <Link href="https://www.linkedin.com/in/daniel-sinhoo-kim/">
                     <a target="_blank">
