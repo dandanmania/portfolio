@@ -1,10 +1,20 @@
 import Link from "next/link";
 import userData from "../constants/data";
-import styles from "../styles/navbar.module.css"
+import styles from "../styles/navbar.module.css";
+import Image from 'next/image';
 
 export default function Navbar() {
     return (
             <div className={styles.navbar}>
+                <div className={styles.logo}>
+                    <Image
+                      priority
+                      src="/DK_logo_proto2.png"
+                      height={890/9.5}
+                      width={786/9.5}
+                      alt="Daniel's Logo"
+                    />
+                </div>
                 <Link href="/">
                     <a>
                         <h1 className={styles.name}>{userData.name}</h1>
