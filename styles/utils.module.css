@@ -45,6 +45,10 @@
     padding-top: 1px;
 }
 
+.paddingB5 {
+    padding-bottom: 50px;
+}
+
 .list {
     list-style: none;
     padding: 0;
@@ -85,6 +89,11 @@
     padding: 0;
 }
 
+.flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .imageContainer {
     text-align: center;
@@ -101,6 +110,10 @@
 
 .paddingR50 {
     padding-right: 50px;
+}
+
+.paddingB30 {
+    padding-bottom: 30px;
 }
 
 .toolsSection {
@@ -167,40 +180,11 @@
     position: relative;
 }
 
-.projectShift {
-    translate: 0 -9rem;
-}
-
-.projectFlexDiv {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0;
-}
-
 .projectCard {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     padding: 20px;
-    z-index: 1;
-}
-
-.projectCard:hover {
-    z-index: 2;
-}
-
-.projectCardDiv {
-    height: 400px;
-    min-width: 600px;
-    max-width: 400px;
-    z-index: 1;
-}
-
-.projectCardDiv:hover {
-    cursor: pointer;
-    transition: transform 0.2s linear;
-    transform: scale(105%);
     z-index: 1;
 }
 
@@ -275,17 +259,17 @@
     }
     
     .introSection {
-        height: 45rem;
+        height: fit-content;
         justify-content: center;
     }
-    
-    .projectTitle { 
-        translate: 0 -5.2rem;;
+
+    .introImage {
+        max-height:40vw;
+        max-width: 40vw;
     }
 
-    .projectContainer {
-        padding-bottom: 0rem;
-        height: 140rem;
+    .projectTitle { 
+        translate: 0 -5.2rem;;
     }
 
     .projectFlexDiv {
@@ -301,7 +285,6 @@
 
     .projectCard {
         padding: 0;
-        translate: 0 !important;
         text-align: -webkit-center;
     }
 

@@ -5,7 +5,6 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Contact from '../components/contact';
-import StarRatings from 'react-star-ratings';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -22,17 +21,9 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className={`${utilStyles.headingMd} ${utilStyles.body} ${utilStyles.imageContainer}`}>
-        <Image
-          priority
-          src="/DK_logo_proto2.png"
-          height={890/2}
-          width={786/2}
-          alt="Daniel's Logo"
-        />
-      </div>
+
       <section className={`${utilStyles.headingMd} ${utilStyles.body} ${utilStyles.introSection}`}>
-        <div className={utilStyles.paddingR50} style={{width: '80vw'}}>
+        <div className={`${utilStyles.paddingR50} ${utilStyles.paddingB30}`}>
           <h1 className={utilStyles.h1}>Hello I'm Daniel Kim and I'm a web developer!</h1>
           <p className={utilStyles.p}>
           I previously studied human biology and was trained to apply emergency care for patients.
@@ -50,13 +41,15 @@ export default function Home({ allPostsData }) {
           I am currently looking for full-time work and am okay with both in-person and remote jobs.
           </p>
         </div>
-        <Image 
-          priority
-          src="/daniel_photo.jpg"
-          alt="Picture of the Developer"
-          width={300}
-          height={300}
-        />
+        <div className={`${utilStyles.introImage}`}>
+          <Image 
+            priority
+            src="/daniel_photo2.png"
+            alt="Picture of the Developer"
+            width={2000}
+            height={2000}
+          />
+        </div>
       </section>
       <section className={`${utilStyles.body} ${utilStyles.toolsSection}`}>
         <h2 className={`${utilStyles.headingTitle} ${utilStyles.toolsTitle}`}>Tools</h2>
@@ -67,97 +60,52 @@ export default function Home({ allPostsData }) {
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
                   className={utilStyles.toolsImages}
                 />
-                <div className={utilStyles.stars}>
-                  <StarRatings 
-                    rating={4.0}
-                    starDimension="15px"
-                    starSpacing="5px"
-                    starRatedColor="#292929"
-                  />
-                </div>
               </div>
               <div className={utilStyles.toolsImagesDivThree}>
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
                   className={utilStyles.toolsImages}
                 />
-                <div className={utilStyles.stars}>
-                  <StarRatings 
-                      rating={4.0}
-                      starDimension="15px"
-                      starSpacing="5px"
-                      starRatedColor="#292929"
-                    />
-                </div>
               </div>
               <div className={utilStyles.toolsImagesDivThree}>
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                   className={utilStyles.toolsImages}
                 />
-                <div className={utilStyles.stars}>
-                  <StarRatings 
-                    rating={3.5}
-                    starDimension="15px"
-                    starSpacing="5px"
-                    starRatedColor="#292929"
-                  />
-                </div>
               </div>
               <div className={utilStyles.toolsImagesDivThree}>
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                   className={utilStyles.toolsImages}
                 />
-                <div className={utilStyles.stars}>
-                  <StarRatings 
-                    rating={3.5}
-                    starDimension="15px"
-                    starSpacing="5px"
-                    starRatedColor="#292929"
-                  />
-                </div>
+
               </div>
               <div className={utilStyles.toolsImagesDivThree}>
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
                   className={utilStyles.toolsImages}
                 />
-                <div className={utilStyles.stars}>
-                  <StarRatings 
-                    rating={2.4}
-                    starDimension="15px"
-                    starSpacing="5px"
-                    starRatedColor="#292929"
-                  />
-                </div>
               </div>
               <div className={utilStyles.toolsImagesDivThree}>
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
                   className={utilStyles.toolsImages}
                 />
-                <div className={utilStyles.stars}>
-                  <StarRatings 
-                    rating={2.2}
-                    starDimension="15px"
-                    starSpacing="5px"
-                    starRatedColor="#292929"
-                  />
-                </div>
+
               </div>
           </div>
         </div>
       </section>
-      <div className={`${utilStyles.body} ${utilStyles.projectContainer}`}>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.projectSection}`}>
+
+
+      <div className={`${utilStyles.body}`}>
+        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.paddingB5} ${utilStyles.projectSection}`}>
           <h1 className={`${utilStyles.headingTitle} ${utilStyles.projectTitle}`}>Projects</h1>
-          <div className={utilStyles.projectShift}>
-            <div className={`${utilStyles.list} ${utilStyles.projectFlexDiv}`}>
-              {allPostsData.map(({ id, title, direction, image, shift, techs }) => (
-                <div className={`${utilStyles.listItem} ${utilStyles.projectCard}`} key={id} style={{ alignSelf: `${direction}`, translate: `${shift}` }}>
+            <div className={`${utilStyles.list} ${utilStyles.flexBox}`}>
+              {allPostsData.map(({ id, title, image, techs }) => (
+                <div className={`${utilStyles.listItem} ${utilStyles.projectCard}`} key={id}>
                   <Link href={`/project/${id}`}>
-                    <div className={utilStyles.projectCardDiv}>
+                    <div>
                       <img src={image} className={utilStyles.projectImg} />
                       <div className={`${utilStyles.greenBg} ${utilStyles.projectLabel}`}>
                         <h1 className={`${utilStyles.whiteText} ${utilStyles.marginZero} ${utilStyles.paddingZero}`}>{title}</h1>
@@ -170,9 +118,10 @@ export default function Home({ allPostsData }) {
                 </div>
               ))}
             </div>
-          </div>
         </section>
       </div>
+
+
       <section className={`${utilStyles.body} ${utilStyles.contactSection} ${utilStyles.whiteBg}`}>
         <h2 className={`${utilStyles.headingTitle} ${utilStyles.contactTitle}`}>Contact</h2>
         <div className={utilStyles.contactCard}>
