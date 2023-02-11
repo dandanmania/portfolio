@@ -10,22 +10,22 @@ export default function Navbar() {
                     <Image
                       priority
                       src="/DK_logo_proto2.png"
-                      height={890/9.5}
-                      width={786/9.5}
+                      layout="fill"
+                      objectFit="contain"
                       alt="Daniel's Logo"
                     />
                 </div>
                 <Link href="/">
-                    <a>
+                    <a className={`${styles.mobileHide}`}>
                         <h1 className={styles.name}>{userData.name}</h1>
                         <p className={styles.designation}>{userData.designation}</p>
                     </a>
                 </Link>
                 <span style={{flex: '1 1 auto'}}></span>
                 <Link href="/files/Kim.Daniel.Webdeveloper.2023.pdf"><a target="_blank" style={{paddingBottom: '8px'}}><h3>RESUME</h3></a></Link>
-                <span className={styles.svgSplitter}></span>
+                <span className={`${styles.svgSplitter}`}></span>
                 <Link href="https://www.linkedin.com/in/daniel-sinhoo-kim/">
-                    <a target="_blank">
+                    <a target="_blank" className={`${styles.mobileHide}`}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
@@ -40,7 +40,7 @@ export default function Navbar() {
                 </Link>
                 <span className={styles.svgSplitter}></span>
                 <Link href="https://medium.com/@dandanmania">
-                      <a target="_blank">
+                      <a target="_blank" className={`${styles.mobileHide}`}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 1633.77 1150.51"
@@ -53,7 +53,7 @@ export default function Navbar() {
                 </Link>
                 <span className={styles.svgSplitter}></span>
                 <Link href="https://twitter.com/kimosterferson">
-                    <a target="_blank">
+                    <a target="_blank" className={`${styles.mobileHide}`}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"

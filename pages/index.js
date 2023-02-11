@@ -112,22 +112,22 @@ export default function Home({ allPostsData }) {
                         <small className={`${utilStyles.displayBlock} ${utilStyles.paddingB0}`}>
                         {techs}
                         </small>
-                        <span className={`${utilStyles.whiteText} ${utilStyles.marginB15} ${utilStyles.displayBlock}`}>
+                        <span className={`${utilStyles.whiteText} ${utilStyles.marginB15} ${utilStyles.displayBlock} ${utilStyles.mobileHide}`}>
                           {miniSyn}
                         </span>
-                        <div className={`${utilStyles.marginB5}`}>
-                        <Link href={gh}>
-                <a target="_blank" className={`${utilStyles.grayBg} ${utilStyles.whiteText} ${utilStyles.projectButton}`}>
-                    GitHub Repo
-                </a>
-            </Link>
-            {link ? (<Link href={link}>
-                <a target="_blank" className={`${utilStyles.grayBg} ${utilStyles.whiteText} ${utilStyles.projectButton}`} style={{ marginLeft: '10px'}}>
-                    Live Site
-                </a>
-            </Link>) : (
-                <></>
-            )}
+                        <div className={`${utilStyles.marginB5} ${utilStyles.mobileHide}`}>
+                          <Link href={gh}>
+                            <a target="_blank" className={`${utilStyles.grayBg} ${utilStyles.whiteText} ${utilStyles.projectButton}`}>
+                              GitHub Repo
+                            </a>
+                          </Link>
+                          {link ? (<Link href={link}>
+                            <a target="_blank" className={`${utilStyles.grayBg} ${utilStyles.whiteText} ${utilStyles.projectButton}`} style={{ marginLeft: '10px'}}>
+                              Live Site
+                            </a>
+                          </Link>) : (
+                            <></>
+                          )}
                         </div>
                       </div>
                     </div>
