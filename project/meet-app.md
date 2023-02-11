@@ -3,7 +3,6 @@ title: 'Meet App'
 index: 3
 direction: 'flex-start'
 image: '/meetapp-sample2.png'
-shift: '0 -20rem'
 techs: 'React, Recharts, Jest Cucumber, Puppeteer, Google Calendar API'
 gh: 'https://github.com/dandanmania/meet'
 link: 'https://dandanmania.github.io/meet/'

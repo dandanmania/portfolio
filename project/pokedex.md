@@ -3,7 +3,6 @@ title: 'Pokedex App'
 index: 0
 direction: 'flex-start'
 image: '/pokedex-sample.png'
-shift: '0 -40rem'
 techs: 'HTML, jQuery, Bootstrap'
 gh: 'https://github.com/dandanmania/pokedex-app'
 link: 'https://dandanmania.github.io/pokedex-app/'
