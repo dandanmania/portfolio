@@ -45,8 +45,20 @@
     padding-top: 1px;
 }
 
-.paddingB5 {
+.paddingB50 {
     padding-bottom: 50px;
+}
+
+.marginB5 {
+    margin-bottom: 5px;
+}
+
+.marginB15 {
+    margin-bottom: 15px;
+}
+
+.displayBlock {
+    display: block;
 }
 
 .list {
@@ -75,6 +87,10 @@
 
 .greenBg {
     background-color: rgba(66,155,118,1.0);
+}
+
+.grayBg {
+    background-color: rgba(29, 29, 29, 0.9);
 }
 
 .whiteText {

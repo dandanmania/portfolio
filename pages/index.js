@@ -99,22 +99,36 @@ export default function Home({ allPostsData }) {
 
 
       <div className={`${utilStyles.body}`}>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.paddingB5} ${utilStyles.projectSection}`}>
+        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.paddingB50} ${utilStyles.projectSection}`}>
           <h1 className={`${utilStyles.headingTitle} ${utilStyles.projectTitle}`}>Projects</h1>
             <div className={`${utilStyles.list} ${utilStyles.flexBox}`}>
-              {allPostsData.map(({ id, title, image, techs }) => (
+              {allPostsData.map(({ id, title, image, techs, gh, link }) => (
                 <div className={`${utilStyles.listItem} ${utilStyles.projectCard}`} key={id}>
-                  <Link href={`/project/${id}`}>
+                  <section>
                     <div>
                       <img src={image} className={utilStyles.projectImg} />
                       <div className={`${utilStyles.greenBg} ${utilStyles.projectLabel}`}>
                         <h1 className={`${utilStyles.whiteText} ${utilStyles.marginZero} ${utilStyles.paddingZero}`}>{title}</h1>
-                        <small className={utilStyles.whiteText}>
+                        <small className={`${utilStyles.whiteText} ${utilStyles.marginB15} ${utilStyles.displayBlock}`}>
                         {techs}
                         </small>
+                        <div className={`${utilStyles.marginB5}`}>
+                        <Link href={gh}>
+                <a target="_blank" className={`${utilStyles.grayBg} ${utilStyles.whiteText} ${utilStyles.projectButton}`}>
+                    GitHub Repo
+                </a>
+            </Link>
+            {link ? (<Link href={link}>
+                <a target="_blank" className={`${utilStyles.grayBg} ${utilStyles.whiteText} ${utilStyles.projectButton}`} style={{ marginLeft: '10px'}}>
+                    Live Site
+                </a>
+            </Link>) : (
+                <></>
+            )}
+                        </div>
                       </div>
                     </div>
-                  </Link>
+                  </section>
                 </div>
               ))}
             </div>
