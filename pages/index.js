@@ -102,16 +102,19 @@ export default function Home({ allPostsData }) {
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.paddingB50} ${utilStyles.projectSection}`}>
           <h1 className={`${utilStyles.headingTitle} ${utilStyles.projectTitle}`}>Projects</h1>
             <div className={`${utilStyles.list} ${utilStyles.flexBox}`}>
-              {allPostsData.map(({ id, title, image, techs, gh, link }) => (
+              {allPostsData.map(({ id, title, image, techs, miniSyn, gh, link }) => (
                 <div className={`${utilStyles.listItem} ${utilStyles.projectCard}`} key={id}>
                   <section>
                     <div>
                       <img src={image} className={utilStyles.projectImg} />
                       <div className={`${utilStyles.greenBg} ${utilStyles.projectLabel}`}>
                         <h1 className={`${utilStyles.whiteText} ${utilStyles.marginZero} ${utilStyles.paddingZero}`}>{title}</h1>
-                        <small className={`${utilStyles.whiteText} ${utilStyles.marginB15} ${utilStyles.displayBlock}`}>
+                        <small className={`${utilStyles.displayBlock} ${utilStyles.paddingB0}`}>
                         {techs}
                         </small>
+                        <span className={`${utilStyles.whiteText} ${utilStyles.marginB15} ${utilStyles.displayBlock}`}>
+                          {miniSyn}
+                        </span>
                         <div className={`${utilStyles.marginB5}`}>
                         <Link href={gh}>
                 <a target="_blank" className={`${utilStyles.grayBg} ${utilStyles.whiteText} ${utilStyles.projectButton}`}>

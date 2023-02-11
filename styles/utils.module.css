@@ -132,6 +132,10 @@
     padding-bottom: 30px;
 }
 
+.paddingB0 {
+    padding-bottom: 0px;
+}
+
 .toolsSection {
     background-color: rgba(66,155,118,0.75);
     color: white;
