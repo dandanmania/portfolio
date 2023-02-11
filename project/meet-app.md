@@ -1,5 +1,5 @@
 ---
-title: 'Meet App'
+title: 'Meet Event App'
 index: 3
 direction: 'flex-start'
 image: '/meetapp-sample2.png'
