@@ -5,7 +5,6 @@ direction: 'flex-start'
 image: '/meetapp-sample2.png'
 techs: 'React, Recharts, Jest Cucumber, Puppeteer, Google Calendar API'
 gh: 'https://github.com/dandanmania/meet'
-link: 'https://dandanmania.github.io/meet/'
 miniSyn: 'Serverless React App to display coding events. Uses Google Oauth 2.0.'
 ---
 
